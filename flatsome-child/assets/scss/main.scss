@@ -1,0 +1,30 @@
+body {
+    line-height: 1.4 !important;
+    font-size: 1rem;
+} 
+
+@import "./variables";
+@import "./mixins";
+@import "./components";
+@import "./header";
+@import "./footer";
+@import "./page";
+
+/* Reset Title */
+.section-title-container {
+    margin-bottom: 0 !i;
+    .section-title {
+        margin-bottom: 0;
+        &.section-title-center>b {
+            opacity: 0;
+        }
+        &.section-title-normal {
+            border-bottom: none;
+            >span {
+                border-bottom: none;
+                padding-bottom: 0;
+            }
+        }
+    }
+}
+/* Size Title */
